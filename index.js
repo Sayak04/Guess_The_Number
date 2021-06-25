@@ -23,6 +23,7 @@ function generate_random_number_while_click() {
         document.getElementById('button-div').style.display = 'none';
         document.getElementById('processing').style.display = 'none';
         document.getElementById('full-page').style.display = 'block';
+        document.getElementById('btn-normal').style.display = 'block';
     }, 1350);
 
 }
@@ -35,6 +36,8 @@ function playAgainRestore() {
     document.getElementById('message_after_correct').style.display = 'none';
     document.getElementById('message_after_wrong').style.display = 'none';
     document.getElementById('entered_number').value = "";
+    document.getElementById('btn-normal').style.display = "block";
+    document.getElementById('btn-playagain').style.display = "none";
 }
 
 function check_number_correct_or_wrong() {
@@ -52,6 +55,9 @@ function check_number_correct_or_wrong() {
         document.body.style.backgroundColor = "rgb(191, 255, 0)";
         document.getElementById('message_after_correct').style.display = 'block';
         document.getElementById('message_after_wrong').style.display = 'none';
+        document.getElementById('btn-normal').style.display = "none";
+        document.getElementById('btn-playagain').style.display = "block";
+        document.getElementById('onlyafterwin').style.display = 'block';
     } else {
         score--;
         document.querySelector('.score').textContent = `Score:- ${score}`;

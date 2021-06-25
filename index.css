@@ -41,8 +41,7 @@
 }
 #btn-playagain {
   padding: 10px 7px;
-  position: relative;
-  margin: auto;
+  margin: 0% 45%;
   align-items: center;
 }
 .scoreDiv {
@@ -111,12 +110,19 @@ input[type="number"] {
 #section_Zero {
   display: none;
 }
+#onlyafterwin {
+  display: none;
+}
+#btn-normal {
+  display: none;
+}
 .container4 img {
   /* height: 400px;
   width: 400px; */
   width: 92%;
 }
 .correct-text {
+    margin: 7% 0%;
     font-size: 34px;
     color: rgb(230, 145, 238);
     text-align: center;
@@ -138,7 +144,7 @@ input[type="number"] {
   .score {
     font-size: 33px;
     float: none;
-    margin-left: 23%;
+    margin-left: 36%;
     padding: 0.2% 0.1%;
   }
   .highscore {
@@ -146,7 +152,7 @@ input[type="number"] {
     font-size: 33px;
     padding: 0px 2px;
     margin-right: 0;
-    margin-left: 20%;
+    margin-left: 33%;
   }
   .container2 img {
     height: 150px;
@@ -158,4 +164,13 @@ input[type="number"] {
     margin: 10px auto;
     text-align: center;
   }
+  #btn-playagain {
+    padding: 10px 7px;
+    margin: 0px 26%;
+    align-items: center;
+  }
+  .correct-text {
+    margin: 21% 10%;
+  }
+
 }
