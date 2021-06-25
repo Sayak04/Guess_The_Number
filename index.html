@@ -7,16 +7,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guess The Number</title>
     <link rel="stylesheet" href="index.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kirang+Haerang&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <nav class="navbar" id="one-liner">
         <h1>
             Let's See What You've Got
+            <hr>
         </h1>
+
     </nav>
+
+    <div id="section_Zero">
+        <div class="scoreDiv">
+            <div class="score">
+                Score:-
+            </div>
+            <div class="highscore">
+                Highest:-
+            </div>
+        </div>
+    </div>
 
     <div class="container1" id="button-div">
         <button class="btn" id="btn-extra-large" onclick="generate_random_number_while_click()">
@@ -30,24 +44,33 @@
         <p class="text-big">Guess a number between 1 to 10...</p>
 
         <div class="form-text">
-            <input id="entered_number" type="text" placeholder="Enter the number...">
+            <input id="entered_number" type="number" placeholder="Enter the number...">
         </div>
 
         <button class="btn" id="btn-normal" onclick="check_number_correct_or_wrong()">
             Proceed
         </button>
+        <!-- <div class="play-again"> -->
+            <button class="btn side" id="btn-playagain" onclick="playAgainRestore()">
+                Play Again
+            </button>
+        <!-- </div> -->
+    </div>
+
+    <div class="container4" id="processing">
+        <img src="https://giffiles.alphacoders.com/211/211099.gif" alt="GIF" srcset="">
     </div>
 
     <div class="container3" id="message_after_correct">
         <p class="correct-text">
             Hell Yeah! You've got that in you!
         </p>
-        
+
     </div>
 
     <div class="container3" id="message_after_wrong">
         <p class="wrong-text">
-            You Need Milk Before Sleep!
+            OOPS!... Try Again
         </p>
     </div>
 
